@@ -23,3 +23,6 @@ go.work.sum
 
 # env file
 .env
+
+#学習用のメモ
+memo.md
