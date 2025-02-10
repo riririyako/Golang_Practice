@@ -1,0 +1,12 @@
+services:
+  hello-web:
+    build:
+      context: .
+      dockerfile: hello-web/Dockerfile
+    ports:
+      - "8080:8080"
+
+  omikuji:
+    build:
+      context: .
+      dockerfile: omikuji/Dockerfile
