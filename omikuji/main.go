@@ -3,12 +3,9 @@ package main
 import (
 	"fmt"
 	"math/rand"
-	"time"
 )
 
 func main() {
-	rand.Seed(time.Now().Unix())
-
 	for i := 1; i <= 3; i++ {
 		fmt.Printf("%d回目のおみくじ結果は", i)
 		number := rand.Intn(6)
