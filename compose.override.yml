@@ -1,0 +1,13 @@
+services:
+  hello-web:
+    # go.modがアプリのディレクトリではなくプロジェクトルートにあるため、ボリュームマウントをするとgo.modが見つからないエラー。
+    # volumes:
+    #   - ./hello-web:/app
+    environment:
+      - ENV=development
+
+  omikuji:
+    # volumes:
+    #   - ./omikuji:/app
+    environment:
+      - ENV=development
